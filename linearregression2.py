@@ -15,7 +15,7 @@ with open(csv_file, 'r') as f:
 y = [float(i) for i in y]
 
 ###########################################################################################
-
+#the actual machine learning code is here
 def computeError(x,y,slope,yint):
     errorlist = [abs(y[i]-(slope*x[i]+yint)) for i in range(len(x))] #(y-(mx+b))^2
     error = sum(errorlist)/len(errorlist) #take average
